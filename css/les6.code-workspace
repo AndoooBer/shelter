@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../lesson6/les6"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../lesson11/health"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "shelter"
+	}
+}

@@ -9,18 +9,31 @@
     margin: auto;
 }
 
+header{
+    position: relative;
+}
+
 .header-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 60px 0;
     z-index: 1;
-    position: relative;
+    position: absolute;
+    left: calc(50% - 1200px/2);
 }
 
 .header-wrapper__menu ul{
     display: flex;
     list-style: none;
+}
+
+.header-wrapper__logo{
+    display: block;
+}
+
+.header-wrapper__menu{
+    display: block;
 }
 
 .header-wrapper__logo a{
@@ -73,8 +86,8 @@ ul a.active{
 
 main{
     background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
-    position: relative;
-    bottom: 180px;
+    /* position: relative; */
+    /* bottom: 180px; */
 }
 
 .hero-wraper{
@@ -426,18 +439,16 @@ main{
     letter-spacing: 0.06em;
     color: #545454;
     padding-left: 45px;
-    width: 274px;
 }
 
 .credit-card{
     background: url(../image/credit-card.svg) no-repeat;
     background-position: 15px;
-    background-size: 30px;
     background-color: #F1CDB3;
     border-radius: 9px;
-    width: 349px;
     padding: 10px 15px 10px 15px;
     margin-bottom: 20px;
+    display: inline-block;
 }
 
 .italic{
@@ -452,18 +463,14 @@ main{
 
 footer{
     background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
-    position: relative;
+    padding: 56px 0 60px 0;
 }
 
 .footer-wrapper{
     display: flex;
     justify-content: baseline;
     align-items: stretch;
-    padding: 60px 0;
-    z-index: 1;
-    position: relative;
     background: url(../image/footer-puppy.png) no-repeat right bottom;
-    height: 310px;
 }
 
 .contacts{
@@ -489,17 +496,14 @@ footer{
 
 .mail__text{
     background: url(../image/mail.png) no-repeat;
-    background-size: 40px;
 }
 
 .phone__text{
     background: url(../image/phone.png) no-repeat;
-    background-size: 40px;
 }
 
 .map__text{
     background: url(../image/pin.png) no-repeat;
-    background-size: 22px;
 }
 
 .mail__text p{
@@ -512,6 +516,7 @@ footer{
     color: #F1CDB3;
     margin-top: 40px;
     margin-left: 60px;
+    height: 32px;
 }
 
 .phone__text p{
@@ -524,6 +529,7 @@ footer{
     color: #F1CDB3;
     margin-top: 40px;
     margin-left: 60px;
+    height: 32px;
 }
 
 .map__text p{
@@ -536,6 +542,7 @@ footer{
     color: #F1CDB3;
     margin-top: 40px;
     margin-left: 30px;
+    height: 32px;
 }
 
 
