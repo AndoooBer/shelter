@@ -10,17 +10,15 @@
 }
 
 header{
-    position: relative;
+    position: absolute;
+    width: 100%;
+    padding: 60px 0;
 }
 
 .header-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 0;
-    z-index: 1;
-    position: absolute;
-    left: calc(50% - 1200px/2);
 }
 
 .header-wrapper__menu ul{
@@ -463,14 +461,14 @@ main{
 
 footer{
     background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
-    padding: 56px 0 60px 0;
 }
 
 .footer-wrapper{
     display: flex;
-    justify-content: baseline;
-    align-items: stretch;
-    background: url(../image/footer-puppy.png) no-repeat right bottom;
+    background-image: url(../image/footer-puppy.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 56px 0 60px 0;
 }
 
 .contacts{
@@ -495,15 +493,19 @@ footer{
 }
 
 .mail__text{
-    background: url(../image/mail.png) no-repeat;
+    margin-top: 40px;
 }
 
 .phone__text{
-    background: url(../image/phone.png) no-repeat;
+    margin-top: 40px;
 }
 
 .map__text{
-    background: url(../image/pin.png) no-repeat;
+    margin-top: 34px;
+}
+
+.map__text1{
+    margin-top: 32px;
 }
 
 .mail__text p{
@@ -514,9 +516,12 @@ footer{
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #F1CDB3;
-    margin-top: 40px;
-    margin-left: 60px;
+    background-image: url(../image/mail.png);
+    background-repeat: no-repeat;
+    background-position: left center;
     height: 32px;
+    line-height: 32px;
+    padding-left: 60px;
 }
 
 .phone__text p{
@@ -527,9 +532,12 @@ footer{
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #F1CDB3;
-    margin-top: 40px;
-    margin-left: 60px;
+    background-image: url(../image/phone.png);
+    background-repeat: no-repeat;
+    background-position: left center;
     height: 32px;
+    line-height: 32px;
+    padding-left: 60px;
 }
 
 .map__text p{
@@ -540,9 +548,27 @@ footer{
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #F1CDB3;
-    margin-top: 40px;
-    margin-left: 30px;
+    background-image: url(../image/pin.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 46px;
+    padding-left: 42px;
+}
+
+.map__text1 p{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    background-image: url(../image/pin.png);
+    background-repeat: no-repeat;
+    background-position: left center;
     height: 32px;
+    line-height: 32px;
+    padding-left: 42px;
 }
 
 
