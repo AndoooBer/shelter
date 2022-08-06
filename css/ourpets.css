@@ -25,9 +25,9 @@ img{
 }
 
 header{
-    position: absolute;
     width: 100%;
-    padding: 60px 0;
+    padding: 30px 0;
+    background-color: #FFFFFF;
 }
 
 .header-wrapper{
@@ -54,7 +54,7 @@ header{
     font-size: 32px;
     line-height: 110%;
     letter-spacing: 0.06em;
-    color: #F1CDB3;
+    color: #545454;
 	text-decoration: none;
 }
 
@@ -64,17 +64,16 @@ header{
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0.1em;
-    color: #FFFFFF;
+    color: #292929;
     text-decoration: none;
     padding-top: 10px;
 }
 
 ul a.active{
-    font-family: 'Arial';
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    color: #FAFAFA;
+    color: #292929;
     border-bottom: solid 3px #F1CDB3;
 }
 
@@ -83,7 +82,7 @@ ul a.active{
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    color: #CDCDCD;
+    color: #292929;
 	text-decoration: none;
     margin-right: 35px;
 }
@@ -126,11 +125,11 @@ main{
     margin-bottom: 42px;
 }
 
-.friend a{
+.friend{
     background: #F1CDB3;
     border-radius: 100px;
     padding: 15px 45px;
-    /* width: 207px; */
+    width: 207px;
     height: 52px;
     text-decoration: none;
     font-weight: 400;
@@ -138,15 +137,7 @@ main{
     line-height: 130%;
     letter-spacing: 0.06em;
     color: #292929;
-}
-
-.friend{
-    display: block;
-    align-items: center;
-}
-
-.friend:hover{
-    background: #FDDCC4;
+    margin-top: 41px;
 }
 
 .about-wraper{
@@ -171,7 +162,7 @@ main{
 }
 
 .about__text{
-    width: 50%;
+    width: 35.83%;
 }
 
 .about__text1{
@@ -183,19 +174,11 @@ main{
 }
 
 .about__img{
-    width: 50%;
-    text-align: center;
-    /* background-image: url(../image/about-pets.png);
+    background-image: url(../image/about-pets.png);
     background-repeat: no-repeat;
-    height: 408px; */
-}
-
-.about__img img{
-    padding-left: 45px;
-    /* display: block; */
-    /* background-image: url(../image/about-pets.png);
-    background-repeat: no-repeat;
-    height: 408px; */
+    width: 300px;
+    height: 408px;
+    display: block;
 }
 
 .pets{
@@ -205,9 +188,17 @@ main{
 
 }
 
+.pets-wraper{
+    /* display: flex; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .pets-content{
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .pets__title{
@@ -219,20 +210,7 @@ main{
     width: 410px;
     margin: auto;
     text-align: center;
-    padding-bottom: 60px;
-}
-
-.pets__centr{
-    display: flex;
-    justify-content: space-between; 
-    /* align-items: center; */
-    flex-grow: 1;
-}
-
-.pets__card{
-    background-color: #FAFAFA;
-    max-width: 270px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .pets img{
@@ -250,10 +228,6 @@ main{
     letter-spacing: 0.06em;
 }
 
-.pets__card:hover{
-    background-color: #FFFFFF;
-}
-
 .learn{
     text-decoration: none;
     font-weight: 400;
@@ -267,6 +241,7 @@ main{
     padding: 15px 45px 15px 45px;
     text-align: center;
     width: 200px;
+    /* justify-content: center;  */
     margin: auto;
 }
 
@@ -275,13 +250,32 @@ main{
     border: 2px solid #FDDCC4;
 }
 
+.pets__card{
+    background-color: #FAFAFA;
+    max-width: 270px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+.pets__card:hover{
+    background-color: #FFFFFF;
+}
+
+.pets__centr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
 .pets__left{
-    margin-right: 53px;
+
+    padding-right: 53px;
 }
 
 .pets__right{
 
-    margin-left: 53px;
+    padding-left: 53px;
 }
 
 .butt-left img{
@@ -295,11 +289,6 @@ main{
     width: 52px;
     height: 52px;
     background-color: #F6F6F6;
-}
-
-.butt-left:hover{
-    background-color: #FDDCC4;
-    border: 2px solid #FDDCC4;
 }
 
 .butt-right img{
@@ -316,12 +305,23 @@ main{
     background-color: #F6F6F6;
 }
 
-.butt-right:hover{
-    background-color: #FDDCC4;
-    border: 2px solid #FDDCC4;
+.centrbut{
+    background: #F1CDB3;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    width: 52px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    display: grid;
+    align-items: center;
+    text-align: center;
 }
 
-.rest{
+.rest1{
     background: #F1CDB3;
     border-radius: 100px;
     padding: 15px 45px;
@@ -335,19 +335,127 @@ main{
     color: #292929;
 }
 
-.rest:hover{
-    background: #FDDCC4;
+.rest2{
+    background: #F1CDB3;
+    border-radius: 100px;
+    padding: 15px 45px;
+    width: 207px;
+    height: 52px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
 }
 
-.button__primary{
+.rest3{
+    background: #F1CDB3;
+    border-radius: 100px;
+    padding: 15px 45px;
+    width: 207px;
+    height: 52px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.rest4{
+    background: #F1CDB3;
+    border-radius: 100px;
+    padding: 15px 45px;
+    width: 207px;
+    height: 52px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.navigation{
     padding-top: 75px;
     text-align: center;
+    margin: auto;
+    max-width: 340px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .help{
     background-color: #FFFFFF;
     padding-top: 80px;
     padding-bottom: 100px;
+}
+
+.left-l{
+    border: 2px solid #CDCDCD;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    background-color: #F6F6F6;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #CDCDCD;
+    display: inline-block;
+}
+
+.left{
+    border: 2px solid #CDCDCD;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    background-color: #F6F6F6;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #CDCDCD;
+    display: inline-block;
+}
+
+.right{
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    background-color: #F6F6F6;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #CDCDCD;
+    display: inline-block;
+}
+
+.right:hover{
+    background-color: #FDDCC4;
+    border: 2px solid #FDDCC4;
+}
+
+.right-r{
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    background-color: #F6F6F6;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #CDCDCD;
+    display: inline-block;
+}
+
+.right-r:hover{
+    background-color: #FDDCC4;
+    border: 2px solid #FDDCC4;
 }
 
 .help__title{
@@ -477,30 +585,20 @@ footer{
 
 .footer-wrapper{
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    /* background-image: url(../image/footer-puppy.png);
+    background-image: url(../image/footer-puppy.png);
     background-repeat: no-repeat;
-    background-position: right bottom; */
-    padding-top: 56px;
-}
-
-.footer__img{
-    width: 300px;
-}
-
-.footer__img img{
-    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 56px 0 60px 0;
 }
 
 .contacts{
-    width: 300px;
-    /* margin-right: 160px; */
+    max-width: 281px;
+    margin-right: 160px;
 }
 
 .location{
-    width: 300px;
-    /* margin-right: 160px; */
+    max-width: 302px;
+    margin-right: 160px;
 }
 
 .footer__title{
@@ -588,64 +686,8 @@ footer{
 
 /* Адаптив */
 
-@media (max-width: 1230px){
+@media(max-width: 1146px){
 	.container{
 		max-width: 95%;
 	}
-} 
-
-@media (max-width: 1100px){
-    .pets__centr div:last-child{
-        display: none;
-    }
-
-    .pets__centr{
-        justify-content: space-around;
-    }
 }
-
-@media (max-width: 1024px){
-    .hero-wraper{
-        background: none;
-    }
-
-    .hero__title{
-        margin: auto;
-        padding-bottom: 42px;
-        text-align: center;
-        width: 40%;
-    }
-
-    .hero__text{
-        margin: auto;
-        padding-bottom: 42px;
-        text-align: center;
-        width: 40%;
-    }
-
-    .friend {
-        margin: auto;
-    }
-}
-
-@media (max-width: 970px){
-    .footer-wrapper{
-        flex-wrap: wrap;
-    }
-
-    footer .footer-wrapper .contacts, footer .footer-wrapper .location{
-        width: 50%;
-    }
-
-    footer .footer-wrapper .footer__img{
-        width: 100%;
-        text-align: center;
-        padding-top: 60px;
-    }
-} 
-
-@media (max-width: 768px){
-    .pets__centr div:first-child{
-        display: none;
-    }
-} 
